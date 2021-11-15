@@ -3,15 +3,15 @@ export default class Team {
     this.members = new Set();
   }
 
-  add(Character) {
-    if (this.members.has(Character)) {
+  add(сharacter) {
+    if (this.members.has(сharacter)) {
       throw new Error('Such a character is already available in this team');
     }
-    this.members.add(Character);
+    this.members.add(сharacter);
   }
 
-  addAll(Characters) {
-    Characters.forEach((element) => {
+  addAll(сharacter) {
+    сharacter.forEach((element) => {
       this.members.add(element);
     });
   }
